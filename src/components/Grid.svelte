@@ -68,9 +68,23 @@
         flex-wrap: nowrap;
         overflow: scroll;        
     }
+    h1 {
+  font-size: 4rem;
+  margin-top: 0;
+  margin-bottom: 80px;
+}
+
+h1 span {
+  color: #17B6D2;
+}
 </style>
  
 <div class="carrusel">
+
+    <h1>
+        Obras: <span>de misericordia</span>
+      </h1>
+      
     {#each positions as position}
     <Card {...position} />
     {/each}
